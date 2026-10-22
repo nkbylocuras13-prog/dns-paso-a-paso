@@ -1,0 +1,15 @@
+;
+; enrique.test
+;
+$TTL 86400
+@ IN SOA debian.enrique.test. admin.enrique.test. (
+        2026102201 ; Serial
+        3600       ; Refresh
+        1800       ; Retry
+        604800     ; Expire
+        86400 )    ; Negative Cache TTL
+
+@       IN NS   debian.enrique.test.
+debian.enrique.test. IN A 192.168.56.10
+web.enrique.test.    IN CNAME debian.enrique.test.
+enrique.test.        IN TXT "enrique_olmedo_munoz"
